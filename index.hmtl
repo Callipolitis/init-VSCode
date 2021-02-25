@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="css.css">
+        <title>Titre</title>
+    </head>
+
+    <body>
+		<div id="page">
+			<form action="" method="post">
+				<div class="bloc">
+					<h2 class="annonce"> 
+						vos coordonées
+					</h2>
+					<div>
+						<label for="nom">Nom</label>
+						<input type="text" name="nom" class="champs" required>
+					</div>
+					<div>
+						<label for="prenom">Prénom</label>
+						<input type="text" name="prenom" class="champs" required>
+					</div>
+					<div>
+						<label for="email">Mail</label>
+						<input type="email" name="email" class="champs" required>
+					</div>
+				</div>
+				<div class="bloc">
+					<h2 class="annonce">
+						votre message
+					</h2>
+					<div>					
+						<label for="Demande">Type de demande</label>
+						<select name="Demande" class="champs">
+							<option value="Generale">Generale</option>
+							<option value="Particuliere">Particuliere</option>
+							<option value="eux" class="try">eux</option>
+						</select>
+					</div>	
+					<div>
+						<label for="sujet">Sujet</label>
+						<input type="text" name="sujet" class="champs" required>
+					</div>
+					<div>
+						<label for="message">Message</label>
+						<textarea name="message" class="champs" required></textarea>
+					</div>
+				</div>
+				<div class="bloc" id="bouton">
+					<input type="submit" value="Soumettre" class="soumettre">
+				</div>
+			</form>
+		</div>
+    </body>
+</html>
